@@ -2,7 +2,7 @@ name: Cookie Check and Avatar Upload
 
 on:
   schedule:
-    # 每5分钟运行一次
+    # 每5分钟运行一次 (UTC 时间)
     - cron: '*/5 * * * *'
   workflow_dispatch:  # 允许手动触发
   push:              # 添加push触发器，方便测试
@@ -54,8 +54,13 @@ jobs:
     
     - name: Update README
       env:
-        TZ: Asia/Shanghai  # 设置时区为东八区
+        TZ: Asia/Shanghai
       run: |
+        # 如果README.md存在，先备份
+        if [ -f README.md ]; then
+          cp README.md README.md.old
+        fi
+        
         # 创建头部内容
         echo "# 头像自动更新" > README.md
         echo "" >> README.md
