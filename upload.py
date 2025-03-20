@@ -24,7 +24,7 @@ def upload_image(image_path):
         if response.status_code == 200:
             result = response.json()
             if result.get('errno') == 0:
-                print('上传成功:', result)
+                # print('上传成功:', result)
                 return True
             else:
                 print('上传失败:', result.get('errmsg'))
@@ -75,6 +75,6 @@ if __name__ == '__main__':
 
     # 获取头像URL
     avatar_url = get_avatar_url()
-    print(f'头像URL: {avatar_url}')
+    print(f'{avatar_url}?response-content-type=text/html&vdid={{alias}}')
 
 

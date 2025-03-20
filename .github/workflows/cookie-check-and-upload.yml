@@ -53,20 +53,27 @@ jobs:
         python upload.py > avatar_output.txt
     
     - name: Update README
+      env:
+        TZ: Asia/Shanghai  # 设置时区为东八区
       run: |
-        # 获取当前时间
-        echo "## 最近更新" > temp_readme.md
-        echo "更新时间: $(date '+%Y-%m-%d %H:%M:%S')" >> temp_readme.md
-        echo "\`\`\`" >> temp_readme.md
-        cat avatar_output.txt >> temp_readme.md
-        echo "\`\`\`" >> temp_readme.md
-        echo "" >> temp_readme.md
-        echo "---" >> temp_readme.md
-        # 如果README.md存在，追加原有内容
-        if [ -f README.md ]; then
-          sed '1,/---/d' README.md >> temp_readme.md
+        # 创建头部内容
+        echo "# 头像自动更新" > README.md
+        echo "" >> README.md
+        echo "## 最新头像地址" >> README.md
+        echo "\`\`\`" >> README.md
+        cat avatar_output.txt >> README.md
+        echo "\`\`\`" >> README.md
+        echo "" >> README.md
+        echo "更新时间: $(date '+%Y-%m-%d %H:%M:%S')" >> README.md
+        echo "" >> README.md
+        echo "## 历史记录" >> README.md
+        echo "" >> README.md
+        
+        # 如果存在旧的README，提取其中的历史记录
+        if [ -f README.md.old ]; then
+          # 从旧文件中提取最后更新的内容，但跳过头部
+          sed -n '/## 最新头像地址/,/## 历史记录/!p' README.md.old | sed -n '/## 历史记录/,$p' >> README.md
         fi
-        mv temp_readme.md README.md
     
     - name: Commit and push changes
       env:
