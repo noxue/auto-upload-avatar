@@ -2,16 +2,13 @@ name: Cookie Check and Avatar Upload
 
 on:
   schedule:
-    # 每30分钟运行一次 cookie-keeper.py
-    - cron: '*/30 * * * *'
-    # 每小时运行一次 upload.py
-    - cron: '0 * * * *'
+    # 每30分钟运行一次
+    - cron: '*/1 * * * *'
   workflow_dispatch:  # 允许手动触发
 
 jobs:
   cookie-check:
     runs-on: ubuntu-latest
-    if: github.event.schedule != '0 * * * *'  # 只在30分钟间隔时运行
     
     steps:
     - uses: actions/checkout@v3
@@ -27,14 +24,11 @@ jobs:
         pip install requests
     
     - name: Run cookie checker
-      env:
-        COOKIES: ${{ secrets.COOKIES }}
-        HEADERS: ${{ secrets.HEADERS }}
       run: python cookie-keeper.py
 
   avatar-upload:
     runs-on: ubuntu-latest
-    if: github.event.schedule == '0 * * * *'  # 只在整点运行
+    needs: cookie-check  # 确保在cookie检查后运行
     
     steps:
     - uses: actions/checkout@v3
