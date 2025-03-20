@@ -1,8 +1,11 @@
-## 最近更新
-更新时间: 2025-03-20 06:08:04
+# 头像自动更新
+
+## 最新头像地址
 ```
-上传成功: {'errno': 0, 'data': [], 'errmsg': '成功', 'timestamp': 1742450882}
-头像URL: https://shanghai.xstore.qihu.com/idaas-pub-store-sh1/2551d37b6139b5682f89ee8dbfd4337d-1.png
+https://shanghai.xstore.qihu.com/idaas-pub-store-sh1/604f6ed7180a96112f7c175b08684d80-1.png?response-content-type=text/html&vdid={alias}
 ```
 
----
+更新时间: 2025-03-20 14:13:43
+
+## 历史记录
+
