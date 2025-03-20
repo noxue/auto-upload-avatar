@@ -6,9 +6,14 @@
 获取失败: 请先登录
 None?response-content-type=text/html&vdid={alias}
 ```
-*2025-03-20 14:47:20*
+*2025-03-20 15:06:38*
 
 ## 历史记录
+
+```
+上传失败: 请先登录
+```
+*2025-03-20 14:47:20*
 
 ```
 https://shanghai.xstore.qihu.com/idaas-pub-store-sh1/163deb3ef4cee17ddd2301ab57917260-1.png?response-content-type=text/html&vdid={alias}
