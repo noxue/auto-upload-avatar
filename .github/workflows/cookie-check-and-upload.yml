@@ -2,9 +2,10 @@ name: Cookie Check and Avatar Upload
 
 on:
   schedule:
-    # 每分钟运行一次
-    - cron: '*/1 * * * *'
+    # 每5分钟运行一次
+    - cron: '*/5 * * * *'
   workflow_dispatch:  # 允许手动触发
+  push:              # 添加push触发器，方便测试
 
 jobs:
   cookie-check:
