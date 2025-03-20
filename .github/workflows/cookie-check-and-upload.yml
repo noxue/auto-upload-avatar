@@ -68,20 +68,24 @@ jobs:
         echo "\`\`\`" >> README.md
         cat avatar_output.txt >> README.md
         echo "\`\`\`" >> README.md
-        echo "" >> README.md
-        echo "更新时间: $(date '+%Y-%m-%d %H:%M:%S')" >> README.md
+        echo "*$(date '+%Y-%m-%d %H:%M:%S')*" >> README.md
         echo "" >> README.md
         echo "## 历史记录" >> README.md
         echo "" >> README.md
         
-        # 如果存在旧的README，将之前的最新记录添加到历史记录中
+        # 如果存在旧的README，将之前的记录添加到历史记录中
         if [ -f README.md.old ]; then
-          # 提取旧的最新头像地址部分
-          echo "### $(cat README.md.old | grep '更新时间' )" >> README.md
-          echo "\`\`\`" >> README.md
-          sed -n '/^```$/,/^```$/p' README.md.old | sed '1d;$d' >> README.md
-          echo "\`\`\`" >> README.md
-          echo "" >> README.md
+          # 获取旧的更新时间和URL
+          OLD_TIME=$(grep -o "\*.*\*" README.md.old | head -1)
+          OLD_URL=$(sed -n '/^```$/,/^```$/p' README.md.old | sed '1d;$d' | head -1)
+          
+          if [ ! -z "$OLD_TIME" ] && [ ! -z "$OLD_URL" ]; then
+            echo "\`\`\`" >> README.md
+            echo "$OLD_URL" >> README.md
+            echo "\`\`\`" >> README.md
+            echo "$OLD_TIME" >> README.md
+            echo "" >> README.md
+          fi
           
           # 添加之前的历史记录
           sed -n '/## 历史记录/,$p' README.md.old | sed '1,2d' >> README.md
