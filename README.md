@@ -6,9 +6,14 @@
 获取失败: 请先登录
 None?response-content-type=text/html&vdid={alias}
 ```
-*2025-04-20 22:05:35*
+*2025-04-20 22:28:25*
 
 ## 历史记录
+
+```
+上传失败: 请先登录
+```
+*2025-04-20 22:05:35*
 
 ```
 发生错误: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
