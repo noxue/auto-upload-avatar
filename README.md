@@ -3,12 +3,17 @@
 ## 最新头像地址
 ```
 上传失败: 请先登录
-发生错误: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+获取失败: 请先登录
 None?response-content-type=text/html&vdid={alias}
 ```
-*2025-05-04 21:36:28*
+*2025-05-04 21:44:15*
 
 ## 历史记录
+
+```
+上传失败: 请先登录
+```
+*2025-05-04 21:36:28*
 
 ```
 上传失败: 请先登录
