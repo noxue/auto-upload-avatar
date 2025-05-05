@@ -2,13 +2,18 @@
 
 ## 最新头像地址
 ```
-发生错误: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-发生错误: HTTPSConnectionPool(host='saas.360.cn', port=443): Read timed out. (read timeout=None)
+上传失败: 请先登录
+获取失败: 请先登录
 None?response-content-type=text/html&vdid={alias}
 ```
-*2025-05-06 02:05:00*
+*2025-05-06 02:07:55*
 
 ## 历史记录
+
+```
+发生错误: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+```
+*2025-05-06 02:05:00*
 
 ```
 上传失败: 请先登录
