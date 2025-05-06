@@ -2,13 +2,18 @@
 
 ## 最新头像地址
 ```
-上传失败: 请先登录
-获取失败: 请先登录
+发生错误: HTTPSConnectionPool(host='saas.360.cn', port=443): Max retries exceeded with url: /api/idaas/user/alter (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f9dc473ecf0>, 'Connection to saas.360.cn timed out. (connect timeout=None)'))
+发生错误: HTTPSConnectionPool(host='saas.360.cn', port=443): Read timed out. (read timeout=None)
 None?response-content-type=text/html&vdid={alias}
 ```
-*2025-05-06 07:44:29*
+*2025-05-06 08:46:38*
 
 ## 历史记录
+
+```
+上传失败: 请先登录
+```
+*2025-05-06 07:44:29*
 
 ```
 上传失败: 请先登录
