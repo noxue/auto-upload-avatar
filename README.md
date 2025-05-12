@@ -3,12 +3,17 @@
 ## 最新头像地址
 ```
 上传失败: 请先登录
-发生错误: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+获取失败: 请先登录
 None?response-content-type=text/html&vdid={alias}
 ```
-*2025-05-12 13:45:51*
+*2025-05-12 14:09:58*
 
 ## 历史记录
+
+```
+上传失败: 请先登录
+```
+*2025-05-12 13:45:51*
 
 ```
 上传失败: 请先登录
