@@ -2,13 +2,18 @@
 
 ## 最新头像地址
 ```
-发生错误: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-发生错误: HTTPSConnectionPool(host='saas.360.cn', port=443): Max retries exceeded with url: /api/idaas/user/detail (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))
+上传失败: 请先登录
+获取失败: 请先登录
 None?response-content-type=text/html&vdid={alias}
 ```
-*2025-05-12 18:08:25*
+*2025-05-12 18:31:26*
 
 ## 历史记录
+
+```
+发生错误: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+```
+*2025-05-12 18:08:25*
 
 ```
 上传失败: 请先登录
