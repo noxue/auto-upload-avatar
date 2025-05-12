@@ -6,9 +6,14 @@
 获取失败: 请先登录
 None?response-content-type=text/html&vdid={alias}
 ```
-*2025-05-12 18:31:26*
+*2025-05-12 18:47:14*
 
 ## 历史记录
+
+```
+上传失败: 请先登录
+```
+*2025-05-12 18:31:26*
 
 ```
 发生错误: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
