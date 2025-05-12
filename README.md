@@ -3,12 +3,17 @@
 ## 最新头像地址
 ```
 上传失败: 请先登录
-获取失败: 请先登录
+发生错误: HTTPSConnectionPool(host='saas.360.cn', port=443): Max retries exceeded with url: /api/idaas/user/detail (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))
 None?response-content-type=text/html&vdid={alias}
 ```
-*2025-05-12 14:49:27*
+*2025-05-12 15:07:58*
 
 ## 历史记录
+
+```
+上传失败: 请先登录
+```
+*2025-05-12 14:49:27*
 
 ```
 上传失败: 请先登录
