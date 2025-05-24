@@ -2,13 +2,18 @@
 
 ## 最新头像地址
 ```
-请求失败，状态码: 502
+上传失败: 请先登录
 获取失败: 请先登录
 None?response-content-type=text/html&vdid={alias}
 ```
-*2025-05-24 12:46:36*
+*2025-05-24 13:06:33*
 
 ## 历史记录
+
+```
+请求失败，状态码: 502
+```
+*2025-05-24 12:46:36*
 
 ```
 发生错误: HTTPSConnectionPool(host='saas.360.cn', port=443): Max retries exceeded with url: /api/idaas/user/alter (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fd2bbff2cf0>, 'Connection to saas.360.cn timed out. (connect timeout=None)'))
