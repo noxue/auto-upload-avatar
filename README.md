@@ -6,9 +6,14 @@
 获取失败: 请先登录
 None?response-content-type=text/html&vdid={alias}
 ```
-*2025-06-12 13:30:08*
+*2025-06-12 13:46:04*
 
 ## 历史记录
+
+```
+上传失败: 请先登录
+```
+*2025-06-12 13:30:08*
 
 ```
 发生错误: HTTPSConnectionPool(host='saas.360.cn', port=443): Max retries exceeded with url: /api/idaas/user/alter (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f5a34ff2f90>, 'Connection to saas.360.cn timed out. (connect timeout=None)'))
