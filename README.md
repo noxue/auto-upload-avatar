@@ -2,13 +2,18 @@
 
 ## 最新头像地址
 ```
+发生错误: HTTPSConnectionPool(host='saas.360.cn', port=443): Max retries exceeded with url: /api/idaas/user/alter (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fbc83342a50>: Failed to establish a new connection: [Errno 111] Connection refused'))
 发生错误: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-发生错误: HTTPSConnectionPool(host='saas.360.cn', port=443): Max retries exceeded with url: /api/idaas/user/detail (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff261a53390>: Failed to establish a new connection: [Errno 111] Connection refused'))
 None?response-content-type=text/html&vdid={alias}
 ```
-*2025-08-20 01:28:36*
+*2025-08-20 01:44:58*
 
 ## 历史记录
+
+```
+发生错误: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+```
+*2025-08-20 01:28:36*
 
 ```
 发生错误: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
